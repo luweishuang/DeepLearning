@@ -35,6 +35,7 @@ from planar_utils import plot_decision_boundary, sigmoid, load_planar_dataset, l
 np.random.seed(1) # set a seed so that the results are consistent
 
 
+
 # ## 2 - Dataset ##
 # 
 # First, let's get the dataset you will work on. The following code will load a "flower" 2-class dataset into variables `X` and `Y`.
@@ -49,9 +50,12 @@ X, Y = load_planar_dataset()
 # In[ ]:
 
 # Visualize the data:
-plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);
+colorRedIndexes = np.where(Y == 0)
+colorBlueIndexes = np.where(Y == 1)
+plt.scatter(X[0, colorBlueIndexes], X[1, colorBlueIndexes])
+plt.scatter(X[0, colorRedIndexes], X[1, colorRedIndexes])
 
-
+#plt.show()
 # You have:
 #     - a numpy-array (matrix) X that contains your features (x1, x2)
 #     - a numpy-array (vector) Y that contains your labels (red:0, blue:1).
@@ -65,9 +69,9 @@ plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);
 # In[ ]:
 
 ### START CODE HERE ### (≈ 3 lines of code)
-shape_X = None
-shape_Y = None
-m = None  # training set size
+shape_X = X.shape
+shape_Y = Y.shape
+m = shape_X[1]  # training set size
 ### END CODE HERE ###
 
 print ('The shape of X is: ' + str(shape_X))
@@ -114,7 +118,6 @@ clf.fit(X.T, Y.T);
 # Plot the decision boundary for logistic regression
 plot_decision_boundary(lambda x: clf.predict(x), X, Y)
 plt.title("Logistic Regression")
-
 # Print accuracy
 LR_predictions = clf.predict(X.T)
 print ('Accuracy of logistic regression: %d ' % float((np.dot(Y,LR_predictions) + np.dot(1-Y,1-LR_predictions))/float(Y.size)*100) +
@@ -189,9 +192,9 @@ def layer_sizes(X, Y):
     n_y -- the size of the output layer
     """
     ### START CODE HERE ### (≈ 3 lines of code)
-    n_x = None # size of input layer
-    n_h = None
-    n_y = None # size of output layer
+    n_x = X.shape[0] # size of input layer
+    n_h = 4
+    n_y = 1 # size of output layer
     ### END CODE HERE ###
     return (n_x, n_h, n_y)
 
@@ -258,10 +261,10 @@ def initialize_parameters(n_x, n_h, n_y):
     np.random.seed(2) # we set up a seed so that your output matches ours although the initialization is random.
     
     ### START CODE HERE ### (≈ 4 lines of code)
-    W1 = None
-    b1 = None
-    W2 = None
-    b2 = None
+    W1 = np.random.randn(n_h, n_x) * 0.01
+    b1 = np.zeros((n_h, 1))
+    W2 = np.random.randn(n_y, n_h) * 0.01
+    b2 = np.zeros((n_y, 1))
     ### END CODE HERE ###
     
     assert (W1.shape == (n_h, n_x))
@@ -351,18 +354,18 @@ def forward_propagation(X, parameters):
     """
     # Retrieve each parameter from the dictionary "parameters"
     ### START CODE HERE ### (≈ 4 lines of code)
-    W1 = None
-    b1 = None
-    W2 = None
-    b2 = None
+    W1 = parameters["W1"]
+    b1 = parameters["b1"]
+    W2 = parameters["W2"]
+    b2 = parameters["b2"]
     ### END CODE HERE ###
-    
+    print(str(W1.shape) + " " + str(W2.shape) + " " + str(b1.shape) + " " + str(b2.shape))
     # Implement Forward Propagation to calculate A2 (probabilities)
     ### START CODE HERE ### (≈ 4 lines of code)
-    Z1 = None
-    A1 = None
-    Z2 = None
-    A2 = None
+    Z1 = W1.dot(X) + b1
+    A1 = np.tanh(Z1)
+    Z2 = W2.dot(A1) + b2
+    A2 = sigmoid(Z2)
     ### END CODE HERE ###
     
     assert(A2.shape == (1, X.shape[1]))
@@ -429,8 +432,8 @@ def compute_cost(A2, Y, parameters):
 
     # Compute the cross-entropy cost
     ### START CODE HERE ### (≈ 2 lines of code)
-    logprobs = None
-    cost = None
+    logprobs = Y*np.log(A2)+(1-Y)*np.log(1-A2)
+    cost = -1/m*np.sum(logprobs)
     ### END CODE HERE ###
     
     cost = np.squeeze(cost)     # makes sure cost is the dimension we expect. 
@@ -445,6 +448,7 @@ def compute_cost(A2, Y, parameters):
 A2, Y_assess, parameters = compute_cost_test_case()
 
 print("cost = " + str(compute_cost(A2, Y_assess, parameters)))
+exit(0)
 
 
 # **Expected Output**:
@@ -512,20 +516,20 @@ def backward_propagation(parameters, cache, X, Y):
     
     # First, retrieve W1 and W2 from the dictionary "parameters".
     ### START CODE HERE ### (≈ 2 lines of code)
-    W1 = None
-    W2 = None
+    W1 = parameters["W1"]
+    W2 = parameters["W2"]
     ### END CODE HERE ###
         
     # Retrieve also A1 and A2 from dictionary "cache".
     ### START CODE HERE ### (≈ 2 lines of code)
-    A1 = None
-    A2 = None
+    A1 = cache["A1"]
+    A2 = cache["A2"]
     ### END CODE HERE ###
     
     # Backward propagation: calculate dW1, db1, dW2, db2. 
     ### START CODE HERE ### (≈ 6 lines of code, corresponding to 6 equations on slide above)
-    dZ2 = None
-    dW2 = None
+    dZ2 = A2 - Y
+    dW2 = dZ2 * A1
     db2 = None
     dZ1 = None
     dW1 = None
