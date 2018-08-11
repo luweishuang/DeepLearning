@@ -359,7 +359,7 @@ def forward_propagation(X, parameters):
     W2 = parameters["W2"]
     b2 = parameters["b2"]
     ### END CODE HERE ###
-    print(str(W1.shape) + " " + str(W2.shape) + " " + str(b1.shape) + " " + str(b2.shape))
+
     # Implement Forward Propagation to calculate A2 (probabilities)
     ### START CODE HERE ### (≈ 4 lines of code)
     Z1 = W1.dot(X) + b1
@@ -448,7 +448,7 @@ def compute_cost(A2, Y, parameters):
 A2, Y_assess, parameters = compute_cost_test_case()
 
 print("cost = " + str(compute_cost(A2, Y_assess, parameters)))
-exit(0)
+
 
 
 # **Expected Output**:
@@ -529,11 +529,11 @@ def backward_propagation(parameters, cache, X, Y):
     # Backward propagation: calculate dW1, db1, dW2, db2. 
     ### START CODE HERE ### (≈ 6 lines of code, corresponding to 6 equations on slide above)
     dZ2 = A2 - Y
-    dW2 = dZ2 * A1
-    db2 = None
-    dZ1 = None
-    dW1 = None
-    db1 = None
+    dW2 = 1/m*dZ2.dot(A1.transpose())
+    db2 = 1/m*np.sum(dZ2, axis=1, keepdims=True)
+    dZ1 = W2.transpose().dot(dZ2)*(1 - np.power(A1, 2))
+    dW1 = 1/m*dZ1.dot(X.transpose())
+    db1 = 1/m*np.sum(dZ1, axis=1, keepdims=True)
     ### END CODE HERE ###
     
     grads = {"dW1": dW1,
@@ -553,7 +553,8 @@ print ("dW1 = "+ str(grads["dW1"]))
 print ("db1 = "+ str(grads["db1"]))
 print ("dW2 = "+ str(grads["dW2"]))
 print ("db2 = "+ str(grads["db2"]))
-
+plt.show()
+exit(0)
 
 # **Expected output**:
 # 
@@ -616,26 +617,26 @@ def update_parameters(parameters, grads, learning_rate = 1.2):
     """
     # Retrieve each parameter from the dictionary "parameters"
     ### START CODE HERE ### (≈ 4 lines of code)
-    W1 = None
-    b1 = None
-    W2 = None
-    b2 = None
+    W1 = parameters["W1"]
+    b1 = parameters["b1"]
+    W2 = parameters["W2"]
+    b2 = parameters["b2"]
     ### END CODE HERE ###
     
     # Retrieve each gradient from the dictionary "grads"
     ### START CODE HERE ### (≈ 4 lines of code)
-    dW1 = None
-    db1 = None
-    dW2 = None
-    db2 = None
+    dW1 = grads["dW1"]
+    db1 = grads["db1"]
+    dW2 = grads["dW2"]
+    db2 = grads["db2"]
     ## END CODE HERE ###
     
     # Update rule for each parameter
     ### START CODE HERE ### (≈ 4 lines of code)
-    W1 = None
-    b1 = None
-    W2 = None
-    b2 = None
+    W1 = W1 - learning_rate*dW1
+    b1 = b1 - learning_rate*db1
+    W2 = W2 - learning_rate*dW2
+    b2 = b2 - learning_rate*db2
     ### END CODE HERE ###
     
     parameters = {"W1": W1,
@@ -715,15 +716,16 @@ def nn_model(X, Y, n_h, num_iterations = 10000, print_cost=False):
     
     np.random.seed(3)
     n_x = layer_sizes(X, Y)[0]
+    n_h = layer_sizes(X, Y)[1];
     n_y = layer_sizes(X, Y)[2]
     
     # Initialize parameters, then retrieve W1, b1, W2, b2. Inputs: "n_x, n_h, n_y". Outputs = "W1, b1, W2, b2, parameters".
     ### START CODE HERE ### (≈ 5 lines of code)
-    parameters = None
-    W1 = None
-    b1 = None
-    W2 = None
-    b2 = None
+    parameters = initialize_parameters(n_x, n_h, n_y)
+    W1 = parameters["W1"]
+    b1 = parameters["b1"]
+    W2 = parameters["W2"]
+    b2 = parameters["b2"]
     ### END CODE HERE ###
     
     # Loop (gradient descent)
@@ -732,16 +734,16 @@ def nn_model(X, Y, n_h, num_iterations = 10000, print_cost=False):
          
         ### START CODE HERE ### (≈ 4 lines of code)
         # Forward propagation. Inputs: "X, parameters". Outputs: "A2, cache".
-        A2, cache = None
+        A2, cache = forward_propagation(X, parameters)
         
         # Cost function. Inputs: "A2, Y, parameters". Outputs: "cost".
-        cost = None
+        cost = compute_cost(A2, Y, parameters)
  
         # Backpropagation. Inputs: "parameters, cache, X, Y". Outputs: "grads".
-        grads = None
+        grads = backward_propagation(parameters, cache, X, Y)
  
         # Gradient descent parameter update. Inputs: "parameters, grads". Outputs: "parameters".
-        parameters = None
+        parameters = update_parameters(parameters, grads)
         
         ### END CODE HERE ###
         
@@ -843,8 +845,8 @@ def predict(parameters, X):
     
     # Computes probabilities using forward propagation, and classifies to 0/1 using 0.5 as the threshold.
     ### START CODE HERE ### (≈ 2 lines of code)
-    A2, cache = None
-    predictions = None
+    A2, cache = forward_propagation(X, parameters)
+    predictions = A2 > 0.5
     ### END CODE HERE ###
     
     return predictions
@@ -981,7 +983,10 @@ if dataset == "blobs":
     Y = Y%2
 
 # Visualize the data
-plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);
+colorRedIndexes = np.where(Y == 0)
+colorBlueIndexes = np.where(Y == 1)
+plt.scatter(X[0, colorBlueIndexes], X[1, colorBlueIndexes])
+plt.scatter(X[0, colorRedIndexes], X[1, colorRedIndexes])
 
 
 # Congrats on finishing this Programming Assignment!
