@@ -96,15 +96,15 @@ class deepNNtest(TestCase):
         dW1 = np.array([[0.41010002, 0.07807203, 0.13798444, 0.10502167],
                         [0., 0., 0., 0.],
                         [0.05283652, 0.01005865, 0.01777766, 0.0135308]])
-        np.testing.assert_allclose(grads["dW1"], dW1)
+        np.testing.assert_almost_equal(grads["dW1"], dW1)
 
         db1 = np.array([[-0.22007063], [0.], [-0.02835349]])
-        np.testing.assert_allclose(grads["db1"], db1)
+        np.testing.assert_almost_equal(grads["db1"], db1)
 
         dA1 = np.array([[0.12913162, -0.44014127],
                         [-0.14175655, 0.48317296],
                         [0.01663708, -0.05670698]])
-        np.testing.assert_allclose(grads["dA1"], dA1)
+        np.testing.assert_almost_equal(grads["dA1"], dA1)
 
     def test_update_parameters(self):
         parameters, grads = update_parameters_test_case()

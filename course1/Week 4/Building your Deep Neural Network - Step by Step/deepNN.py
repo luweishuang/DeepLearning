@@ -215,7 +215,7 @@ def linear_backward(dZ, cache):
 
     ### START CODE HERE ### (≈ 3 lines of code)
     dW = 1/m*np.dot(dZ, A_prev.transpose())
-    db = 1/m*np.sum(dZ, keepdims=True)
+    db = 1/m*np.sum(dZ, axis=1, keepdims=True)
     dA_prev = W.transpose().dot(dZ)
     ### END CODE HERE ###
     
@@ -280,7 +280,7 @@ def L_model_backward(AL, Y, caches):
     
     # Initializing the backpropagation
     ### START CODE HERE ### (1 line of code)
-    dAL = -(np.divide(Y, AL) - np.divide(1-Y, 1 - AL))
+    dAL = - (np.divide(Y, AL) - np.divide(1 - Y, 1 - AL))
     ### END CODE HERE ###
     
     # Lth layer (SIGMOID -> LINEAR) gradients. Inputs: "dAL, current_cache". Outputs: "grads["dAL-1"], grads["dWL"], grads["dbL"]
@@ -325,7 +325,7 @@ def update_parameters(parameters, grads, learning_rate):
     # Update rule for each parameter. Use a for loop.
     ### START CODE HERE ### (≈ 3 lines of code)
     for l in range(L):
-        parameters["W" + str(l+1)] = None
-        parameters["b" + str(l+1)] = None
+        parameters["W" + str(l+1)] -= learning_rate*grads["dW" + str(l+1)]
+        parameters["b" + str(l+1)] -= learning_rate*grads["db" + str(l+1)]
     ### END CODE HERE ###
     return parameters
