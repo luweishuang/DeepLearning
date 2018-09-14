@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efdc8192-112e-4cbc-9c41-dd0bf22194aa" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/DeepLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DeepLearning.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="deepNNtest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/deepNNtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2640">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deepNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/deepNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7128">
+              <caret line="328" column="61" selection-start-line="328" selection-start-column="61" selection-end-line="328" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classification.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course1/Week 4/Deep Neural Network Application_ Image Classification/classification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="453" column="21" selection-start-line="453" selection-start-column="21" selection-end-line="453" selection-end-column="21" />
+              <folding>
+                <element signature="e#1441#1452#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Initialization.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course2/week5/Initialization/Initialization.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="388" column="10" selection-start-line="388" selection-start-column="10" selection-end-line="388" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Initialization.ipynb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course2/week5/Initialization/Initialization.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Regularization - v2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course2/week5/Regularization/Regularization - v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mio.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/scipy/io/matlab/mio.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course2/week5/Regularization/reg_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="327" selection-start-line="327" selection-end-line="327" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dnn_app_utils_v3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course1/Week 4/Deep Neural Network Application_ Image Classification/dnn_app_utils_v3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7040">
+              <caret line="322" column="4" selection-start-line="322" selection-start-column="4" selection-end-line="322" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/numpy/testing/_private/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31328">
+              <caret line="1442" selection-start-line="1442" selection-end-line="1442" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CatClassifier/Logistic+Regression+with+a+Neural+Network+mindset+v3.ipynb" />
+        <option value="$PROJECT_DIR$/CatClassifier/Python+Basics+With+Numpy+v3.ipynb" />
+        <option value="$PROJECT_DIR$/CatClassifier/test.py" />
+        <option value="$PROJECT_DIR$/CatClassifier/PA1.py" />
+        <option value="$PROJECT_DIR$/course1/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v5.ipynb" />
+        <option value="$PROJECT_DIR$/course1/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v5.py" />
+        <option value="$PROJECT_DIR$/course1/Week 3/Planar data classification with one hidden layer/planar_utils.py" />
+        <option value="$PROJECT_DIR$/course1/Week 3/Planar data classification with one hidden layer/Planar+data+classification+with+one+hidden+layer+v5.py" />
+        <option value="$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.py" />
+        <option value="$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/deepNNtest.py" />
+        <option value="$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/deepNN.py" />
+        <option value="$PROJECT_DIR$/course1/Week 4/Deep Neural Network Application_ Image Classification/classification.py" />
+        <option value="$PROJECT_DIR$/course2/week5/Initialization/Initialization.py" />
+        <option value="$PROJECT_DIR$/course2/week5/Regularization/Regularization - v2.py" />
+        <option value="$PROJECT_DIR$/course2/week5/Regularization/reg_utils.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="course2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="course2" type="462c0819:PsiDirectoryNode" />
+              <item name="week5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="course2" type="462c0819:PsiDirectoryNode" />
+              <item name="week5" type="462c0819:PsiDirectoryNode" />
+              <item name="Regularization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="course2" type="462c0819:PsiDirectoryNode" />
+              <item name="week5" type="462c0819:PsiDirectoryNode" />
+              <item name="Regularization" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/course2/week5/Initialization" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\WORKSPACE\Python\DeepLearning\NNstepByStep" />
+      <recent name="C:\WORKSPACE\Python\DeepLearning\PlanarClassifier" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WORKSPACE\Python\DeepLearning\course2\week5\Regularization" />
+      <recent name="C:\WORKSPACE\Python\DeepLearning\course2\week5\Initialization" />
+      <recent name="C:\WORKSPACE\Python\DeepLearning\course1\Week 4\Deep Neural Network Application_ Image Classification" />
+      <recent name="C:\WORKSPACE\Python\DeepLearning\course1\Week 3\Planar data classification with one hidden layer" />
+      <recent name="C:\WORKSPACE\Python\DeepLearning\course1\Week 2\Logistic Regression as a Neural Network" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Regularization - v2">
+    <configuration name="DeepLearning" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="DeepLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+    </configuration>
+    <configuration name="Initialization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course2/week5/Initialization" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course2/week5/Initialization/Initialization.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Regularization - v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course2/week5/Regularization" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course2/week5/Regularization/Regularization - v2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course1/Week 4/Deep Neural Network Application_ Image Classification" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course1/Week 4/Deep Neural Network Application_ Image Classification/classification.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Unittests for deepNNtest.deepNNtest.test_update_parameters" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="DeepLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;deepNNtest.deepNNtest.test_update_parameters&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests in deepNNtest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="DeepLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/deepNNtest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <list>
+      <item itemvalue="Jupyter Notebook.DeepLearning" />
+      <item itemvalue="Python tests.Unittests in deepNNtest.py" />
+      <item itemvalue="Python tests.Unittests for deepNNtest.deepNNtest.test_update_parameters" />
+      <item itemvalue="Python.classification" />
+      <item itemvalue="Python.Initialization" />
+      <item itemvalue="Python.Regularization - v2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Regularization - v2" />
+        <item itemvalue="Python.Initialization" />
+        <item itemvalue="Python.classification" />
+        <item itemvalue="Python tests.Unittests in deepNNtest.py" />
+        <item itemvalue="Python tests.Unittests for deepNNtest.deepNNtest.test_update_parameters" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efdc8192-112e-4cbc-9c41-dd0bf22194aa" name="Default" comment="" />
+      <created>1533076202180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533076202180</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_L_model_backward - 2018.09.10 at 00h 15m 47s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_L_model_backward" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_L_model_backward - 2018.09.10 at 00h 16m 03s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_L_model_backward" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_L_model_backward - 2018.09.10 at 00h 25m 14s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_L_model_backward" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_L_model_backward - 2018.09.10 at 00h 25m 16s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_L_model_backward" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_L_model_backward - 2018.09.10 at 00h 25m 26s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_L_model_backward" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_L_model_backward - 2018.09.10 at 00h 25m 45s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_L_model_backward" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_L_model_backward - 2018.09.10 at 00h 26m 16s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_L_model_backward" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_update_parameters - 2018.09.10 at 00h 26m 34s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_update_parameters" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_deepNNtest_deepNNtest_test_update_parameters - 2018.09.10 at 00h 32m 15s.xml">
+      <configuration name="Unittests for deepNNtest.deepNNtest.test_update_parameters" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_deepNNtest_py - 2018.09.10 at 00h 32m 30s.xml">
+      <configuration name="Unittests in deepNNtest.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29010418" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36450586" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/deepNN.py</url>
+          <line>223</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="22" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>caches[&quot;dW0&quot;]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>caches[&quot;W0&quot;]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>caches[&quot;W1&quot;]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>X[0, Y]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>X[0, :]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>X[1, Y]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>A[]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>A[i,1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>A[i]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/matplotlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39974">
+          <caret line="1854" selection-start-line="1854" selection-end-line="1854" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52096">
+          <caret line="2368" selection-start-line="2368" selection-end-line="2368" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/matplotlib/cm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3432">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 3/Planar data classification with one hidden layer/Planar data classification with one hidden layer v5.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v5.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14366">
+          <caret line="653" column="105" selection-start-line="653" selection-start-column="105" selection-end-line="653" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 3/Planar data classification with one hidden layer/Planar+data+classification+with+one+hidden+layer+v5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CatClassifier/Logistic+Regression+with+a+Neural+Network+mindset+v3.ipynb" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/Logistic+Regression+with+a+Neural+Network+mindset+v5.ipynb" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/Python+Basics+With+Numpy+v3.ipynb" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/PA1.py" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/Logistic+Regression+with+a+Neural+Network+mindset+v3.ipynb" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/Logistic+Regression+with+a+Neural+Network+mindset+v5.ipynb" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/Logistic+Regression+with+a+Neural+Network+mindset+v3.ipynb" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/Logistic+Regression+with+a+Neural+Network+mindset+v5.ipynb" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/Python+Basics+With+Numpy+v3.ipynb" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/lr_utils.py" />
+    <entry file="file://$PROJECT_DIR$/CatClassifier/PA1.py" />
+    <entry file="file://$PROJECT_DIR$/ImageClassifier/dnn_app_utils_v3.py" />
+    <entry file="file://$PROJECT_DIR$/course1/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v5.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2886">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14234">
+          <caret line="653" column="105" selection-start-line="653" selection-start-column="105" selection-end-line="653" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/matplotlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39974">
+          <caret line="1854" selection-start-line="1854" selection-end-line="1854" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50974">
+          <caret line="2368" selection-start-line="2368" selection-end-line="2368" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/matplotlib/cm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3432">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 3/Planar data classification with one hidden layer/Planar data classification with one hidden layer v4.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12430">
+          <caret line="577" selection-start-line="577" selection-end-line="577" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 3/Planar data classification with one hidden layer/Planar data classification with one hidden layer v5.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/matplotlib/colors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5566">
+          <caret line="266" selection-start-line="266" selection-end-line="266" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/matplotlib/axes/_axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93038">
+          <caret line="4273" selection-start-line="4273" selection-end-line="4273" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 3/Planar data classification with one hidden layer/planar_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="61" selection-start-line="20" selection-start-column="3" selection-end-line="23" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 3/Planar data classification with one hidden layer/Planar+data+classification+with+one+hidden+layer+v5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.py" />
+    <entry file="file://$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/testCases_v4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="119" column="50" lean-forward="true" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/dnn_utils_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14278">
+          <caret line="662" selection-start-line="662" selection-end-line="662" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1760">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3740">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6468">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_unittest_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/numpy/testing/_private/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31328">
+          <caret line="1442" selection-start-line="1442" selection-end-line="1442" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/deepNNtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 4/Building your Deep Neural Network - Step by Step/deepNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7128">
+          <caret line="328" column="61" selection-start-line="328" selection-start-column="61" selection-end-line="328" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 4/Deep Neural Network Application_ Image Classification/dnn_app_utils_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7040">
+          <caret line="322" column="4" selection-start-line="322" selection-start-column="4" selection-end-line="322" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course1/Week 4/Deep Neural Network Application_ Image Classification/classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="453" column="21" selection-start-line="453" selection-start-column="21" selection-end-line="453" selection-end-column="21" />
+          <folding>
+            <element signature="e#1441#1452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course2/week5/Initialization/Initialization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="388" column="10" selection-start-line="388" selection-start-column="10" selection-end-line="388" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course2/week5/Initialization/Initialization.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course2/week5/Regularization/reg_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course2/week5/Regularization/Regularization - v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/scipy/io/matlab/mio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
