@@ -41,31 +41,6 @@ plt.rcParams['image.cmap'] = 'gray'
 train_X, train_Y, test_X, test_Y = load_2D_dataset()
 
 
-# Each dot corresponds to a position on the football field where a football player has hit the ball with his/her head after the French goal keeper has shot the ball from the left side of the football field.
-# - If the dot is blue, it means the French player managed to hit the ball with his/her head
-# - If the dot is red, it means the other team's player hit the ball with their head
-# 
-# **Your goal**: Use a deep learning model to find the positions on the field where the goalkeeper should kick the ball.
-
-# **Analysis of the dataset**: This dataset is a little noisy, but it looks like a diagonal line separating the upper left half (blue) from the lower right half (red) would work well. 
-# 
-# You will first try a non-regularized model. Then you'll learn how to regularize it and decide which model you will choose to solve the French Football Corporation's problem. 
-
-# ## 1 - Non-regularized model
-# 
-# You will use the following neural network (already implemented for you below). This model can be used:
-# - in *regularization mode* -- by setting the `lambd` input to a non-zero value. We use "`lambd`" instead of "`lambda`" because "`lambda`" is a reserved keyword in Python. 
-# - in *dropout mode* -- by setting the `keep_prob` to a value less than one
-# 
-# You will first try the model without any regularization. Then, you will implement:
-# - *L2 regularization* -- functions: "`compute_cost_with_regularization()`" and "`backward_propagation_with_regularization()`"
-# - *Dropout* -- functions: "`forward_propagation_with_dropout()`" and "`backward_propagation_with_dropout()`"
-# 
-# In each part, you will run this model with the correct inputs so that it calls the functions you've implemented. Take a look at the code below to familiarize yourself with the model.
-
-# In[ ]:
-
-
 def model(X, Y, learning_rate = 0.3, num_iterations = 30000, print_cost = True, lambd = 0, keep_prob = 1):
     """
     Implements a three-layer neural network: LINEAR->RELU->LINEAR->RELU->LINEAR->SIGMOID.
@@ -136,9 +111,7 @@ def model(X, Y, learning_rate = 0.3, num_iterations = 30000, print_cost = True, 
     return parameters
 
 
-# Let's train the model without any regularization, and observe the accuracy on the train/test sets.
 
-# In[ ]:
 
 
 parameters = model(train_X, train_Y)
@@ -146,12 +119,6 @@ print ("On the training set:")
 predictions_train = predict(train_X, train_Y, parameters)
 print ("On the test set:")
 predictions_test = predict(test_X, test_Y, parameters)
-input("press any key")
-
-# The train accuracy is 94.8% while the test accuracy is 91.5%. This is the **baseline model** (you will observe the impact of regularization on this model). Run the following code to plot the decision boundary of your model.
-
-# In[ ]:
-
 
 plt.title("Model without regularization")
 axes = plt.gca()
