@@ -191,56 +191,56 @@ def conv_backward(dZ, cache):
 
     ### START CODE HERE ###
     # Retrieve information from "cache"
-    (A_prev, W, b, hparameters) = None
+    (A_prev, W, b, hparameters) = cache
 
     # Retrieve dimensions from A_prev's shape
-    (m, n_H_prev, n_W_prev, n_C_prev) = None
+    (m, n_H_prev, n_W_prev, n_C_prev) = A_prev.shape
 
     # Retrieve dimensions from W's shape
-    (f, f, n_C_prev, n_C) = None
+    (f, f, n_C_prev, n_C) = W.shape
 
     # Retrieve information from "hparameters"
-    stride = None
-    pad = None
+    stride = hparameters["stride"]
+    pad = hparameters["pad"]
 
     # Retrieve dimensions from dZ's shape
-    (m, n_H, n_W, n_C) = None
+    (m, n_H, n_W, n_C) = dZ.shape
 
     # Initialize dA_prev, dW, db with the correct shapes
-    dA_prev = None
-    dW = None
-    db = None
+    dA_prev = np.zeros(A_prev.shape)
+    dW = np.zeros(W.shape)
+    db = np.zeros(b.shape)
 
     # Pad A_prev and dA_prev
-    A_prev_pad = None
-    dA_prev_pad = None
+    A_prev_pad = zero_pad(A_prev, pad)
+    dA_prev_pad = zero_pad(dA_prev, pad)
 
-    for i in range(None):                       # loop over the training examples
+    for i in range(m):                       # loop over the training examples
 
         # select ith training example from A_prev_pad and dA_prev_pad
-        a_prev_pad = None
-        da_prev_pad = None
+        a_prev_pad = A_prev_pad[i]
+        da_prev_pad = dA_prev_pad[i]
 
-        for h in range(None):                   # loop over vertical axis of the output volume
-            for w in range(None):               # loop over horizontal axis of the output volume
-                for c in range(None):           # loop over the channels of the output volume
+        for h in range(n_H):                   # loop over vertical axis of the output volume
+            for w in range(n_W):               # loop over horizontal axis of the output volume
+                for c in range(n_C):           # loop over the channels of the output volume
 
                     # Find the corners of the current "slice"
-                    vert_start = None
-                    vert_end = None
-                    horiz_start = None
-                    horiz_end = None
+                    vert_start = h * stride
+                    vert_end = vert_start + f
+                    horiz_start = w * stride
+                    horiz_end = horiz_start + f
 
                     # Use the corners to define the slice from a_prev_pad
-                    a_slice = None
+                    a_slice = da_prev_pad[vert_start:vert_end, horiz_start:horiz_end, :]
 
                     # Update gradients for the window and the filter's parameters using the code formulas given above
-                    da_prev_pad[vert_start:vert_end, horiz_start:horiz_end, :] += None
-                    dW[:,:,:,c] += None
-                    db[:,:,:,c] += None
+                    da_prev_pad[vert_start:vert_end, horiz_start:horiz_end, :] += W[:, :, :, c] * dZ[i, h, w, c]
+                    dW[:, :, :, c] += a_slice * dZ[i, h, w, c]
+                    db[:, :, :, c] += dZ[i, h, w, c]
 
         # Set the ith training example's dA_prev to the unpaded da_prev_pad (Hint: use X[pad:-pad, pad:-pad, :])
-        dA_prev[i, :, :, :] = None
+        dA_prev[i, :, :, :] = da_prev_pad[pad:-pad, pad:-pad, :]
     ### END CODE HERE ###
 
     # Making sure your output shape is correct

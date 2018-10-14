@@ -10,32 +10,10 @@ from tensorflow.python.framework import ops
 from cnn_utils import *
 
 np.random.seed(1)
-
-
-# Loading the data (signs)
 X_train_orig, Y_train_orig, X_test_orig, Y_test_orig, classes = load_dataset()
-
-
-# As a reminder, the SIGNS dataset is a collection of 6 signs representing numbers from 0 to 5.
-# 
-# <img src="images/SIGNS.png" style="width:800px;height:300px;">
-# 
-# The next cell will show you an example of a labelled image in the dataset. Feel free to change the value of `index` below and re-run to see different examples. 
-
-# In[ ]:
-
-# Example of a picture
 index = 6
 plt.imshow(X_train_orig[index])
 print ("y = " + str(np.squeeze(Y_train_orig[:, index])))
-
-
-# In Course 2, you had built a fully-connected network for this dataset. But since this is an image dataset, it is more natural to apply a ConvNet to it.
-# 
-# To get started, let's examine the shapes of your data. 
-
-# In[ ]:
-
 X_train = X_train_orig/255.
 X_test = X_test_orig/255.
 Y_train = convert_to_one_hot(Y_train_orig, 6).T
